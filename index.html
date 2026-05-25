@@ -128,7 +128,7 @@ tr:hover td{background:#fcfaff}
 </head>
 <body>
 
-<div id="loginScreen" class="login">
+<div id="loginScreen" class="login" style="display: none;">
   <div class="login-card">
     <img id="loginLogo" class="logo" alt="Wareed" src="data:image/jpeg;base64,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" style="width:100px;height:100px;object-fit:contain;display:block;margin:0 auto 10px">
     <h1>Wareed Ticket System</h1>
@@ -150,7 +150,7 @@ tr:hover td{background:#fcfaff}
   </div>
 </div>
 
-<div id="app" class="app">
+<div id="app" class="app" style="display: block;">
   <div class="top">
     <div class="brand">
       <img id="topLogo" alt="Wareed" src="data:image/jpeg;base64,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" style="width:36px;height:36px;object-fit:contain;border-radius:8px;background:white;padding:3px">
@@ -160,7 +160,7 @@ tr:hover td{background:#fcfaff}
       </div>
     </div>
     <div class="userbox">
-      <div class="user-pill" id="currentUserPill" onclick="openProfile()" style="cursor:pointer">مدير النظام</div>
+      <div class="user-pill" id="currentUserPill" onclick="openProfile()" style="cursor:pointer">Muhalhel Alzahrani - مدير عام</div>
       <button class="btn btn-secondary" onclick="logout()">🚪 خروج</button>
     </div>
   </div>
@@ -169,18 +169,18 @@ tr:hover td{background:#fcfaff}
     <aside class="side">
       <div class="side-title">
         <b>مختبرات وريد الطبية</b>
-        <span id="sideRole">صلاحية عامة</span>
+        <span id="sideRole">مدير عام / الإدارة العامة</span>
       </div>
-      <div class="nav active" data-page="dashboard" onclick="showPage(&#39;dashboard&#39;)">📊 لوحة التحكم</div>
+      <div class="nav" data-page="dashboard" onclick="showPage(&#39;dashboard&#39;)">📊 لوحة التحكم</div>
       <div class="nav" data-page="tickets" onclick="showPage(&#39;tickets&#39;)">🎫 جميع التذاكر</div>
       <div class="nav" data-page="newTicket" onclick="openTicketModal()">➕ رفع تذكرة جديدة</div>
-      <div class="nav" data-page="users" onclick="showPage(&#39;users&#39;)">👤 المستخدمون والصلاحيات</div>
+      <div class="nav active" data-page="users" onclick="showPage(&#39;users&#39;)">👤 المستخدمون والصلاحيات</div>
       <div class="nav" data-page="reports" onclick="showPage(&#39;reports&#39;)">📈 التقارير</div>
       <div class="nav" data-page="settings" onclick="showPage(&#39;settings&#39;)">⚙️ الإعدادات</div>
     </aside>
 
     <main class="main">
-      <section id="dashboard" class="page active">
+      <section id="dashboard" class="page">
         <div class="head">
           <div>
             <h1>مساء النور 👋</h1>
@@ -189,14 +189,50 @@ tr:hover td{background:#fcfaff}
           <button class="btn btn-primary" onclick="openTicketModal()">➕ تذكرة جديدة</button>
         </div>
         <div class="stats">
-          <div class="stat"><b id="sTotal">0</b><span>إجمالي التذاكر</span></div>
-          <div class="stat"><b id="sOpen">0</b><span>مفتوحة / تحت الإجراء</span></div>
-          <div class="stat"><b id="sWaiting">0</b><span>بانتظار رد</span></div>
-          <div class="stat"><b id="sClosed">0</b><span>مغلقة</span></div>
+          <div class="stat"><b id="sTotal">15</b><span>إجمالي التذاكر</span></div>
+          <div class="stat"><b id="sOpen">8</b><span>مفتوحة / تحت الإجراء</span></div>
+          <div class="stat"><b id="sWaiting">3</b><span>بانتظار رد</span></div>
+          <div class="stat"><b id="sClosed">4</b><span>مغلقة</span></div>
         </div>
         <div class="card">
           <div class="card-h"><h3>آخر التذاكر</h3><button class="btn btn-secondary" onclick="showPage(&#39;tickets&#39;)">عرض الكل</button></div>
-          <div class="card-b"><div class="table-wrap"><table id="recentTable"><tbody><tr><td colspan="12" style="text-align:center;color:var(--muted);padding:40px">لا توجد تذاكر</td></tr></tbody></table></div></div>
+          <div class="card-b"><div class="table-wrap"><table id="recentTable"><thead><tr><th>رقم</th><th>العنوان</th><th>العميل</th><th>الجوال</th><th>Accession</th><th>من</th><th>إلى</th><th>المسؤول</th><th>النوع</th><th>الحالة</th><th>عرض</th><th>تعديل</th></tr></thead><tbody><tr>
+      <td><b>WRD-015-1613</b></td><td>تست 13</td><td>مهلهل</td><td>05499999260</td><td>0002</td>
+      <td>الإدارة العامة</td><td>خدمة العملاء</td><td>Hessa</td><td>مشكلة عميل</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-015-1613&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-015-1613&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-015-1613&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-014-8474</b></td><td>تست12</td><td>مهلهل 1</td><td>05499999260</td><td>0001</td>
+      <td>الإدارة العامة</td><td>الإدارة العامة</td><td>Muhalhel Alzahrani</td><td>مشكلة عميل</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-014-8474&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting" selected="">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-014-8474&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-014-8474&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-013-4646</b></td><td>تست 11</td><td>مهلهل 1</td><td>05499999260</td><td>0001</td>
+      <td>الإدارة العامة</td><td>خدمة العملاء</td><td>Hessa</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-013-4646&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed" selected="">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-013-4646&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-013-4646&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-012-4423</b></td><td>تست 10</td><td>مهلهل 1</td><td>05499999260</td><td>0002</td>
+      <td>الإدارة العامة</td><td>خدمة العملاء</td><td>Hessa</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-012-4423&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-012-4423&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-012-4423&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-011-6805</b></td><td>تست 9</td><td>مهلهل 1</td><td>05499999260</td><td>0001</td>
+      <td>الإدارة العامة</td><td>الإدارة العامة</td><td>Muhalhel Alzahrani</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-011-6805&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-011-6805&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-011-6805&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-010-8451</b></td><td>تست 2</td><td>مهلهل 1</td><td>05499999260</td><td>0001</td>
+      <td>خدمة العملاء</td><td>الإدارة العامة</td><td>Muhalhel Alzahrani</td><td>مشكلة عميل</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-010-8451&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-010-8451&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-010-8451&#39;))">✏️ تعديل</button></td>
+    </tr></tbody></table></div></div>
         </div>
       </section>
 
@@ -219,16 +255,106 @@ tr:hover td{background:#fcfaff}
                 <option value="waiting">بانتظار رد</option>
                 <option value="closed">مغلقة</option>
               </select>
-              <select id="fToDept" onchange="renderAll()"><option value="">كل الأقسام</option><option>الإدارة العامة</option><option>المالية</option><option>الموارد البشرية</option><option>التسويق</option><option>خدمة العملاء</option><option>الكول سنتر</option><option>المختبر الرئيسي</option><option>فروع الكولكشن</option><option>مديرو الفروع</option><option>العمليات</option><option>تقنية المعلومات IT</option><option>الجودة</option><option>المبيعات</option><option>التحصيل</option><option>الشكاوى وتجربة العميل</option></select>
+              <select id="fToDept" onchange="renderAll()"><option value="">كل الأقسام</option><option>الإدارة العامة</option><option>المالية</option><option>الموارد البشرية</option><option>التسويق</option><option>خدمة العملاء</option><option>المختبر الرئيسي</option><option>فروع الكولكشن</option><option>مديرو الفروع</option><option>العمليات</option><option>تقنية المعلومات IT</option><option>الجودة</option><option>المبيعات</option><option>التحصيل</option><option>الشكاوى وتجربة العميل</option><option>المشاريع</option></select>
               <select id="fType" onchange="renderAll()"><option value="">كل الأنواع</option><option>طلب دعم</option><option>مشكلة عميل</option><option>تأخير نتيجة</option><option>تعديل بيانات عميل</option><option>مشكلة عينة / Accession</option><option>مشكلة دفع / مالية</option><option>طلب ماركتنق</option><option>طلب موارد بشرية</option><option>طلب IT</option><option>شكوى</option><option>طلب موافقة</option><option>أخرى</option></select>
               <button class="btn btn-secondary" onclick="resetFilters()">مسح</button>
             </div>
-            <div class="table-wrap"><table id="ticketsTable"><tbody><tr><td colspan="12" style="text-align:center;color:var(--muted);padding:40px">لا توجد تذاكر</td></tr></tbody></table></div>
+            <div class="table-wrap"><table id="ticketsTable"><thead><tr><th>رقم</th><th>العنوان</th><th>العميل</th><th>الجوال</th><th>Accession</th><th>من</th><th>إلى</th><th>المسؤول</th><th>النوع</th><th>الحالة</th><th>عرض</th><th>تعديل</th></tr></thead><tbody><tr>
+      <td><b>WRD-015-1613</b></td><td>تست 13</td><td>مهلهل</td><td>05499999260</td><td>0002</td>
+      <td>الإدارة العامة</td><td>خدمة العملاء</td><td>Hessa</td><td>مشكلة عميل</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-015-1613&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-015-1613&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-015-1613&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-014-8474</b></td><td>تست12</td><td>مهلهل 1</td><td>05499999260</td><td>0001</td>
+      <td>الإدارة العامة</td><td>الإدارة العامة</td><td>Muhalhel Alzahrani</td><td>مشكلة عميل</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-014-8474&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting" selected="">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-014-8474&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-014-8474&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-013-4646</b></td><td>تست 11</td><td>مهلهل 1</td><td>05499999260</td><td>0001</td>
+      <td>الإدارة العامة</td><td>خدمة العملاء</td><td>Hessa</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-013-4646&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed" selected="">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-013-4646&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-013-4646&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-012-4423</b></td><td>تست 10</td><td>مهلهل 1</td><td>05499999260</td><td>0002</td>
+      <td>الإدارة العامة</td><td>خدمة العملاء</td><td>Hessa</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-012-4423&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-012-4423&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-012-4423&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-011-6805</b></td><td>تست 9</td><td>مهلهل 1</td><td>05499999260</td><td>0001</td>
+      <td>الإدارة العامة</td><td>الإدارة العامة</td><td>Muhalhel Alzahrani</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-011-6805&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-011-6805&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-011-6805&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-010-8451</b></td><td>تست 2</td><td>مهلهل 1</td><td>05499999260</td><td>0001</td>
+      <td>خدمة العملاء</td><td>الإدارة العامة</td><td>Muhalhel Alzahrani</td><td>مشكلة عميل</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-010-8451&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-010-8451&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-010-8451&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-009-5064</b></td><td>تست</td><td>مهلهل</td><td>0533260377</td><td>0002</td>
+      <td>خدمة العملاء</td><td>المختبر الرئيسي</td><td>-</td><td>تأخير نتيجة</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-009-5064&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-009-5064&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-009-5064&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-008-1648</b></td><td>تست 2</td><td>مهلهل</td><td>054999992620</td><td>0002</td>
+      <td>خدمة العملاء</td><td>المختبر الرئيسي</td><td>-</td><td>تأخير نتيجة</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-008-1648&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-008-1648&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-008-1648&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-007-8278</b></td><td>تيست</td><td>بب</td><td>-</td><td>-</td>
+      <td>المشاريع</td><td>الإدارة العامة</td><td>Muhalhel</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-007-8278&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting" selected="">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-007-8278&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-007-8278&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-006-5869</b></td><td>تست 6</td><td>مهلهل 1</td><td>054999992620</td><td>0002</td>
+      <td>الإدارة العامة</td><td>الإدارة العامة</td><td>Muhalhel</td><td>تأخير نتيجة</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-006-5869&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress" selected="">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-006-5869&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-006-5869&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-005-5396</b></td><td>تست 5</td><td>مهلهل 1</td><td>054999992620</td><td>0002</td>
+      <td>خدمة العملاء</td><td>التسويق</td><td>-</td><td>طلب ماركتنق</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-005-5396&#39;,this.value)"><option value="open" selected="">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-005-5396&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-005-5396&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-004-1893</b></td><td>تست 4</td><td>مهلهل 1</td><td>054999992620</td><td>0002</td>
+      <td>الإدارة العامة</td><td>الإدارة العامة</td><td>Muhalhel</td><td>تأخير نتيجة</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-004-1893&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed" selected="">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-004-1893&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-004-1893&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-003-8784</b></td><td>تست 3</td><td>مهلهل 1</td><td>054999992620</td><td>0002</td>
+      <td>الإدارة العامة</td><td>خدمة العملاء</td><td>Muhalhel</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-003-8784&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed" selected="">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-003-8784&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-003-8784&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-002-1696</b></td><td>تست 2</td><td>مهلهل</td><td>054999992620</td><td>0001</td>
+      <td>خدمة العملاء</td><td>المختبر الرئيسي</td><td>-</td><td>مشكلة عميل</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-002-1696&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting" selected="">بانتظار رد</option><option value="closed">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-002-1696&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-002-1696&#39;))">✏️ تعديل</button></td>
+    </tr><tr>
+      <td><b>WRD-003-0271</b></td><td>تست</td><td>مهلهل</td><td>054999992620</td><td>000</td>
+      <td>الإدارة العامة</td><td>الإدارة العامة</td><td>-</td><td>طلب دعم</td>
+      <td><select class="quick-status" onchange="quickStatus(&#39;WRD-003-0271&#39;,this.value)"><option value="open">مفتوحة</option><option value="progress">تحت الإجراء</option><option value="waiting">بانتظار رد</option><option value="closed" selected="">مغلقة</option></select></td>
+      <td><button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="viewTicket(&#39;WRD-003-0271&#39;)">👁 عرض</button></td>
+      <td><button style="background:#f3e8ff;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="openTicketModal(tickets.find(x=&gt;x.id===&#39;WRD-003-0271&#39;))">✏️ تعديل</button></td>
+    </tr></tbody></table></div>
           </div>
         </div>
       </section>
 
-      <section id="users" class="page">
+      <section id="users" class="page active">
         <div class="head">
           <div>
             <h1>المستخدمون والصلاحيات</h1>
@@ -254,6 +380,82 @@ tr:hover td{background:#fcfaff}
     <tbody><tr onmouseover="this.style.background=&#39;#faf5ff&#39;" onmouseout="this.style.background=&#39;&#39;">
       <td>
         <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#6b21a8,#9333ea);display:flex;align-items:center;justify-content:center;color:white;font-size:15px;font-weight:800;flex-shrink:0">a</div>
+          <div>
+            <div style="font-weight:800;font-size:14px;color:#1e1233">anas </div>
+            <div style="font-size:11px;color:#9ca3af">anasramzi@wareed.com.sa</div>
+          </div>
+        </div>
+      </td>
+      <td style="font-size:12px;color:#6b7280">anasramzi@wareed.com.sa</td>
+      <td><span style="background:#f3e8ff;color:#6b21a8;border-radius:8px;padding:4px 10px;font-size:12px;font-weight:600">خدمة العملاء</span></td>
+      <td><span style="border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;background:#6b21a8;color:white">🏢 مدير قسم</span></td>
+      <td style="max-width:250px"><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">لوحة التحكم</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">جميع التذاكر</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">التقارير</span></td>
+      <td style="white-space:nowrap">
+        <button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif;margin-left:6px" onclick="openEditUser(&#39;anasramzi@wareed.com.sa&#39;)">✏️ تعديل</button>
+        <button style="background:#fee2e2;color:#dc2626;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="deleteUser(&#39;anasramzi@wareed.com.sa&#39;)">🗑 حذف</button>
+        
+      </td>
+    </tr><tr onmouseover="this.style.background=&#39;#faf5ff&#39;" onmouseout="this.style.background=&#39;&#39;">
+      <td>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#6b21a8,#9333ea);display:flex;align-items:center;justify-content:center;color:white;font-size:15px;font-weight:800;flex-shrink:0">H</div>
+          <div>
+            <div style="font-weight:800;font-size:14px;color:#1e1233">H </div>
+            <div style="font-size:11px;color:#9ca3af">h@wareed.com.sa</div>
+          </div>
+        </div>
+      </td>
+      <td style="font-size:12px;color:#6b7280">h@wareed.com.sa</td>
+      <td><span style="background:#f3e8ff;color:#6b21a8;border-radius:8px;padding:4px 10px;font-size:12px;font-weight:600">خدمة العملاء</span></td>
+      <td><span style="border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;background:#6b21a8;color:white">🏢 مدير قسم</span></td>
+      <td style="max-width:250px"><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">لوحة التحكم</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">جميع التذاكر</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">المستخدمون والصلاحيات</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">التقارير</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">الإعدادات</span></td>
+      <td style="white-space:nowrap">
+        <button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif;margin-left:6px" onclick="openEditUser(&#39;h@wareed.com.sa&#39;)">✏️ تعديل</button>
+        <button style="background:#fee2e2;color:#dc2626;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="deleteUser(&#39;h@wareed.com.sa&#39;)">🗑 حذف</button>
+        
+      </td>
+    </tr><tr onmouseover="this.style.background=&#39;#faf5ff&#39;" onmouseout="this.style.background=&#39;&#39;" style="">
+      <td>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#6b21a8,#9333ea);display:flex;align-items:center;justify-content:center;color:white;font-size:15px;font-weight:800;flex-shrink:0">H</div>
+          <div>
+            <div style="font-weight:800;font-size:14px;color:#1e1233">Hessa </div>
+            <div style="font-size:11px;color:#9ca3af">hessa_wareed_com_sa</div>
+          </div>
+        </div>
+      </td>
+      <td style="font-size:12px;color:#6b7280">h.alzahrani@wareed.com.sa</td>
+      <td><span style="background:#f3e8ff;color:#6b21a8;border-radius:8px;padding:4px 10px;font-size:12px;font-weight:600">خدمة العملاء</span></td>
+      <td><span style="border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;background:#6b21a8;color:white">🏢 مدير قسم</span></td>
+      <td style="max-width:250px"><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">لوحة التحكم</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">جميع التذاكر</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">المستخدمون والصلاحيات</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">التقارير</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">الإعدادات</span></td>
+      <td style="white-space:nowrap">
+        <button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif;margin-left:6px" onclick="openEditUser(&#39;hessa_wareed_com_sa&#39;)">✏️ تعديل</button>
+        <button style="background:#fee2e2;color:#dc2626;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="deleteUser(&#39;hessa_wareed_com_sa&#39;)">🗑 حذف</button>
+        
+      </td>
+    </tr><tr onmouseover="this.style.background=&#39;#faf5ff&#39;" onmouseout="this.style.background=&#39;&#39;" style="">
+      <td>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#6b21a8,#9333ea);display:flex;align-items:center;justify-content:center;color:white;font-size:15px;font-weight:800;flex-shrink:0">k</div>
+          <div>
+            <div style="font-weight:800;font-size:14px;color:#1e1233">khaled </div>
+            <div style="font-size:11px;color:#9ca3af">k.alghamdi@wareed.com.sa</div>
+          </div>
+        </div>
+      </td>
+      <td style="font-size:12px;color:#6b7280">k.alghamdi@wareed.com.sa</td>
+      <td><span style="background:#f3e8ff;color:#6b21a8;border-radius:8px;padding:4px 10px;font-size:12px;font-weight:600">خدمة العملاء</span></td>
+      <td><span style="border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;background:#ede9fe;color:#4c1d95">👤 موظف قسم</span></td>
+      <td style="max-width:250px"><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">لوحة التحكم</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">جميع التذاكر</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">التقارير</span></td>
+      <td style="white-space:nowrap">
+        <button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif;margin-left:6px" onclick="openEditUser(&#39;k.alghamdi@wareed.com.sa&#39;)">✏️ تعديل</button>
+        <button style="background:#fee2e2;color:#dc2626;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="deleteUser(&#39;k.alghamdi@wareed.com.sa&#39;)">🗑 حذف</button>
+        
+      </td>
+    </tr><tr onmouseover="this.style.background=&#39;#faf5ff&#39;" onmouseout="this.style.background=&#39;&#39;" style="background: rgb(250, 245, 255);">
+      <td>
+        <div style="display:flex;align-items:center;gap:10px">
           <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#6b21a8,#9333ea);display:flex;align-items:center;justify-content:center;color:white;font-size:15px;font-weight:800;flex-shrink:0">M</div>
           <div>
             <div style="font-weight:800;font-size:14px;color:#1e1233">Muhalhel Alzahrani <span style="font-size:10px;background:#fbbf24;color:#1e1233;border-radius:6px;padding:1px 7px;margin-right:4px">ROOT</span></div>
@@ -266,9 +468,47 @@ tr:hover td{background:#fcfaff}
       <td><span style="border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;background:#3b0f5f;color:white">👑 مدير عام</span></td>
       <td style="max-width:250px"><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">لوحة التحكم</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">جميع التذاكر</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">المستخدمون والصلاحيات</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">التقارير</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">الإعدادات</span></td>
       <td style="white-space:nowrap">
+        <button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif;margin-left:6px" onclick="openEditUser(&#39;muhalhel&#39;)">✏️ تعديل</button>
         
         
-        <span style="color:#d1d5db;font-size:11px">🔒 محمي</span>
+      </td>
+    </tr><tr onmouseover="this.style.background=&#39;#faf5ff&#39;" onmouseout="this.style.background=&#39;&#39;" style="">
+      <td>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#6b21a8,#9333ea);display:flex;align-items:center;justify-content:center;color:white;font-size:15px;font-weight:800;flex-shrink:0">P</div>
+          <div>
+            <div style="font-weight:800;font-size:14px;color:#1e1233">PMO </div>
+            <div style="font-size:11px;color:#9ca3af">pmo_wareed_com_sa</div>
+          </div>
+        </div>
+      </td>
+      <td style="font-size:12px;color:#6b7280">pmo@wareed.com.sa</td>
+      <td><span style="background:#f3e8ff;color:#6b21a8;border-radius:8px;padding:4px 10px;font-size:12px;font-weight:600">المشاريع</span></td>
+      <td><span style="border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;background:#6b21a8;color:white">🏢 مدير قسم</span></td>
+      <td style="max-width:250px"><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">لوحة التحكم</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">جميع التذاكر</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">المستخدمون والصلاحيات</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">التقارير</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">الإعدادات</span></td>
+      <td style="white-space:nowrap">
+        <button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif;margin-left:6px" onclick="openEditUser(&#39;pmo_wareed_com_sa&#39;)">✏️ تعديل</button>
+        <button style="background:#fee2e2;color:#dc2626;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="deleteUser(&#39;pmo_wareed_com_sa&#39;)">🗑 حذف</button>
+        
+      </td>
+    </tr><tr onmouseover="this.style.background=&#39;#faf5ff&#39;" onmouseout="this.style.background=&#39;&#39;" style="">
+      <td>
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#6b21a8,#9333ea);display:flex;align-items:center;justify-content:center;color:white;font-size:15px;font-weight:800;flex-shrink:0">R</div>
+          <div>
+            <div style="font-weight:800;font-size:14px;color:#1e1233">Rawan </div>
+            <div style="font-size:11px;color:#9ca3af">r.alanazii@wareed.com.sa</div>
+          </div>
+        </div>
+      </td>
+      <td style="font-size:12px;color:#6b7280">r.alanazii@wareed.com.sa</td>
+      <td><span style="background:#f3e8ff;color:#6b21a8;border-radius:8px;padding:4px 10px;font-size:12px;font-weight:600">المختبر الرئيسي</span></td>
+      <td><span style="border-radius:20px;padding:4px 12px;font-size:12px;font-weight:700;background:#6b21a8;color:white">🏢 مدير قسم</span></td>
+      <td style="max-width:250px"><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">لوحة التحكم</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">جميع التذاكر</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">التقارير</span><span style="display:inline-block;background:#f3e8ff;color:#6b21a8;border-radius:6px;padding:2px 8px;font-size:11px;margin:2px;font-weight:600">الإعدادات</span></td>
+      <td style="white-space:nowrap">
+        <button style="background:#ede9fe;color:#6b21a8;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif;margin-left:6px" onclick="openEditUser(&#39;r.alanazii@wareed.com.sa&#39;)">✏️ تعديل</button>
+        <button style="background:#fee2e2;color:#dc2626;border:none;border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;cursor:pointer;font-family:Tajawal,Arial,sans-serif" onclick="deleteUser(&#39;r.alanazii@wareed.com.sa&#39;)">🗑 حذف</button>
+        
       </td>
     </tr></tbody></table></div>
           </div>
@@ -281,12 +521,56 @@ tr:hover td{background:#fcfaff}
         </div>
 
         <!-- ══ التقارير التفاعلية حسب القسم ══ -->
-        <div id="deptReport"><div onclick="filterToTickets(&#39;&#39;,&#39;&#39;)" style="background:var(--p5);border:1.5px solid var(--line);border-radius:14px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;margin-top:8px">
+        <div id="deptReport"><div style="background:white;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)">
+      <div style="font-size:15px;font-weight:800;color:var(--p1);margin-bottom:14px;display:flex;align-items:center;gap:8px">
+        🏢 خدمة العملاء
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="filterToTickets(&#39;خدمة العملاء&#39;,&#39;&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#ede9fe;color:#4c1d95">الكل: 4</button>
+        <button onclick="filterToTickets(&#39;خدمة العملاء&#39;,&#39;open&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#fee2e2;color:#991b1b">مفتوحة: 2</button>
+        <button onclick="filterToTickets(&#39;خدمة العملاء&#39;,&#39;progress&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#dbeafe;color:#1d4ed8">تحت الإجراء: 0</button>
+        <button onclick="filterToTickets(&#39;خدمة العملاء&#39;,&#39;waiting&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#fef3c7;color:#92400e">بانتظار رد: 0</button>
+        <button onclick="filterToTickets(&#39;خدمة العملاء&#39;,&#39;closed&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#dcfce7;color:#166534">مغلقة: 2</button>
+      </div>
+    </div><div style="background:white;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)">
+      <div style="font-size:15px;font-weight:800;color:var(--p1);margin-bottom:14px;display:flex;align-items:center;gap:8px">
+        🏢 الإدارة العامة
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="filterToTickets(&#39;الإدارة العامة&#39;,&#39;&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#ede9fe;color:#4c1d95">الكل: 7</button>
+        <button onclick="filterToTickets(&#39;الإدارة العامة&#39;,&#39;open&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#fee2e2;color:#991b1b">مفتوحة: 2</button>
+        <button onclick="filterToTickets(&#39;الإدارة العامة&#39;,&#39;progress&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#dbeafe;color:#1d4ed8">تحت الإجراء: 1</button>
+        <button onclick="filterToTickets(&#39;الإدارة العامة&#39;,&#39;waiting&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#fef3c7;color:#92400e">بانتظار رد: 2</button>
+        <button onclick="filterToTickets(&#39;الإدارة العامة&#39;,&#39;closed&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#dcfce7;color:#166534">مغلقة: 2</button>
+      </div>
+    </div><div style="background:white;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)">
+      <div style="font-size:15px;font-weight:800;color:var(--p1);margin-bottom:14px;display:flex;align-items:center;gap:8px">
+        🏢 المختبر الرئيسي
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="filterToTickets(&#39;المختبر الرئيسي&#39;,&#39;&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#ede9fe;color:#4c1d95">الكل: 3</button>
+        <button onclick="filterToTickets(&#39;المختبر الرئيسي&#39;,&#39;open&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#fee2e2;color:#991b1b">مفتوحة: 2</button>
+        <button onclick="filterToTickets(&#39;المختبر الرئيسي&#39;,&#39;progress&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#dbeafe;color:#1d4ed8">تحت الإجراء: 0</button>
+        <button onclick="filterToTickets(&#39;المختبر الرئيسي&#39;,&#39;waiting&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#fef3c7;color:#92400e">بانتظار رد: 1</button>
+        <button onclick="filterToTickets(&#39;المختبر الرئيسي&#39;,&#39;closed&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#dcfce7;color:#166534">مغلقة: 0</button>
+      </div>
+    </div><div style="background:white;border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow)">
+      <div style="font-size:15px;font-weight:800;color:var(--p1);margin-bottom:14px;display:flex;align-items:center;gap:8px">
+        🏢 التسويق
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <button onclick="filterToTickets(&#39;التسويق&#39;,&#39;&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#ede9fe;color:#4c1d95">الكل: 1</button>
+        <button onclick="filterToTickets(&#39;التسويق&#39;,&#39;open&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#fee2e2;color:#991b1b">مفتوحة: 1</button>
+        <button onclick="filterToTickets(&#39;التسويق&#39;,&#39;progress&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#dbeafe;color:#1d4ed8">تحت الإجراء: 0</button>
+        <button onclick="filterToTickets(&#39;التسويق&#39;,&#39;waiting&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#fef3c7;color:#92400e">بانتظار رد: 0</button>
+        <button onclick="filterToTickets(&#39;التسويق&#39;,&#39;closed&#39;)" style="border:none;border-radius:10px;padding:9px 16px;font-size:13px;font-weight:800;cursor:pointer;font-family:Tajawal,Arial,sans-serif;background:#dcfce7;color:#166534">مغلقة: 0</button>
+      </div>
+    </div><div onclick="filterToTickets(&#39;&#39;,&#39;&#39;)" style="background:var(--p5);border:1.5px solid var(--line);border-radius:14px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;margin-top:8px">
     <div>
       <div style="font-size:15px;font-weight:800;color:var(--p1)">إجمالي كل التذاكر</div>
       <div style="font-size:12px;color:var(--muted);margin-top:3px">اضغط لعرض جميع التذاكر</div>
     </div>
-    <div style="font-size:28px;font-weight:800;color:var(--p2)">0</div>
+    <div style="font-size:28px;font-weight:800;color:var(--p2)">15</div>
   </div></div>
 
         <!-- ══ لوحة التحليلات ══ -->
@@ -299,19 +583,19 @@ tr:hover td{background:#fcfaff}
           <div id="kpiRow" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px">
     <div style="background:white;border:1px solid #ddd6fe;border-radius:14px;padding:16px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 8px rgba(107,33,168,.08)">
       <div style="width:44px;height:44px;border-radius:12px;background:#f3e8ff;color:#6b21a8;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">🎫</div>
-      <div><div style="font-size:28px;font-weight:800;color:#6b21a8;line-height:1">0</div><div style="font-size:12px;color:#9ca3af;margin-top:3px">إجمالي التذاكر</div></div>
+      <div><div style="font-size:28px;font-weight:800;color:#6b21a8;line-height:1">15</div><div style="font-size:12px;color:#9ca3af;margin-top:3px">إجمالي التذاكر</div></div>
     </div>
     <div style="background:white;border:1px solid #ddd6fe;border-radius:14px;padding:16px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 8px rgba(107,33,168,.08)">
       <div style="width:44px;height:44px;border-radius:12px;background:#fee2e2;color:#dc2626;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">🔴</div>
-      <div><div style="font-size:28px;font-weight:800;color:#dc2626;line-height:1">0</div><div style="font-size:12px;color:#9ca3af;margin-top:3px">مفتوحة</div></div>
+      <div><div style="font-size:28px;font-weight:800;color:#dc2626;line-height:1">7</div><div style="font-size:12px;color:#9ca3af;margin-top:3px">مفتوحة</div></div>
     </div>
     <div style="background:white;border:1px solid #ddd6fe;border-radius:14px;padding:16px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 8px rgba(107,33,168,.08)">
       <div style="width:44px;height:44px;border-radius:12px;background:#dcfce7;color:#16a34a;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">✅</div>
-      <div><div style="font-size:28px;font-weight:800;color:#16a34a;line-height:1">0</div><div style="font-size:12px;color:#9ca3af;margin-top:3px">مغلقة</div></div>
+      <div><div style="font-size:28px;font-weight:800;color:#16a34a;line-height:1">4</div><div style="font-size:12px;color:#9ca3af;margin-top:3px">مغلقة</div></div>
     </div>
     <div style="background:white;border:1px solid #ddd6fe;border-radius:14px;padding:16px 18px;display:flex;align-items:center;gap:14px;box-shadow:0 2px 8px rgba(107,33,168,.08)">
       <div style="width:44px;height:44px;border-radius:12px;background:#fef3c7;color:#d97706;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0">%</div>
-      <div><div style="font-size:28px;font-weight:800;color:#d97706;line-height:1">0%</div><div style="font-size:12px;color:#9ca3af;margin-top:3px">نسبة الإغلاق</div></div>
+      <div><div style="font-size:28px;font-weight:800;color:#d97706;line-height:1">27%</div><div style="font-size:12px;color:#9ca3af;margin-top:3px">نسبة الإغلاق</div></div>
     </div></div>
 
           <!-- Row 1: Status + Dept -->
@@ -320,13 +604,13 @@ tr:hover td{background:#fcfaff}
               <div style="font-size:14px;font-weight:800;color:#3b0f5f;margin-bottom:14px;display:flex;align-items:center;gap:7px">
                 🥧 توزيع حسب الحالة
               </div>
-              <div style="position:relative;height:220px"><canvas id="chartStatus"></canvas></div>
+              <div style="position:relative;height:220px"><canvas id="chartStatus" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
             </div>
             <div style="background:white;border:1px solid #ddd6fe;border-radius:16px;padding:20px;box-shadow:0 2px 8px rgba(107,33,168,.08)">
               <div style="font-size:14px;font-weight:800;color:#3b0f5f;margin-bottom:14px;display:flex;align-items:center;gap:7px">
                 📈 التذاكر حسب القسم المستلم
               </div>
-              <div style="position:relative;height:220px"><canvas id="chartDept"></canvas></div>
+              <div style="position:relative;height:220px"><canvas id="chartDept" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
             </div>
           </div>
 
@@ -336,13 +620,13 @@ tr:hover td{background:#fcfaff}
               <div style="font-size:14px;font-weight:800;color:#3b0f5f;margin-bottom:14px;display:flex;align-items:center;gap:7px">
                 📉 نشاط التذاكر خلال آخر 7 أيام
               </div>
-              <div style="position:relative;height:200px"><canvas id="chartTimeline"></canvas></div>
+              <div style="position:relative;height:200px"><canvas id="chartTimeline" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
             </div>
             <div style="background:white;border:1px solid #ddd6fe;border-radius:16px;padding:20px;box-shadow:0 2px 8px rgba(107,33,168,.08)">
               <div style="font-size:14px;font-weight:800;color:#3b0f5f;margin-bottom:14px;display:flex;align-items:center;gap:7px">
                 ⭕ توزيع حسب نوع التذكرة
               </div>
-              <div style="position:relative;height:200px"><canvas id="chartType"></canvas></div>
+              <div style="position:relative;height:200px"><canvas id="chartType" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
             </div>
           </div>
 
@@ -352,13 +636,41 @@ tr:hover td{background:#fcfaff}
               <div style="font-size:14px;font-weight:800;color:#3b0f5f;margin-bottom:14px;display:flex;align-items:center;gap:7px">
                 🏢 الأقسام الأكثر إرسالاً
               </div>
-              <div style="position:relative;height:200px"><canvas id="chartFrom"></canvas></div>
+              <div style="position:relative;height:200px"><canvas id="chartFrom" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
             </div>
             <div style="background:white;border:1px solid #ddd6fe;border-radius:16px;padding:20px;box-shadow:0 2px 8px rgba(107,33,168,.08)">
               <div style="font-size:14px;font-weight:800;color:#3b0f5f;margin-bottom:14px;display:flex;align-items:center;gap:7px">
                 📋 أكثر الأنواع مفتوحة
               </div>
-              <ul id="topOpenTypes" style="list-style:none;padding:0"><p style="color:#9ca3af;padding:20px;text-align:center">لا توجد تذاكر</p></ul>
+              <ul id="topOpenTypes" style="list-style:none;padding:0">
+      <li style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f1e9ff;font-size:13px">
+        <span style="color:#3b0f5f;font-weight:600">1. مشكلة عميل</span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span style="display:inline-block;height:8px;width:80px;background:#9333ea;border-radius:4px"></span>
+          <strong style="color:#6b21a8;font-size:14px">4</strong>
+        </span>
+      </li>
+      <li style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f1e9ff;font-size:13px">
+        <span style="color:#3b0f5f;font-weight:600">2. طلب دعم</span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span style="display:inline-block;height:8px;width:60px;background:#9333ea;border-radius:4px"></span>
+          <strong style="color:#6b21a8;font-size:14px">3</strong>
+        </span>
+      </li>
+      <li style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f1e9ff;font-size:13px">
+        <span style="color:#3b0f5f;font-weight:600">3. تأخير نتيجة</span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span style="display:inline-block;height:8px;width:60px;background:#9333ea;border-radius:4px"></span>
+          <strong style="color:#6b21a8;font-size:14px">3</strong>
+        </span>
+      </li>
+      <li style="display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid #f1e9ff;font-size:13px">
+        <span style="color:#3b0f5f;font-weight:600">4. طلب ماركتنق</span>
+        <span style="display:flex;align-items:center;gap:8px">
+          <span style="display:inline-block;height:8px;width:20px;background:#9333ea;border-radius:4px"></span>
+          <strong style="color:#6b21a8;font-size:14px">1</strong>
+        </span>
+      </li></ul>
             </div>
           </div>
 
@@ -368,13 +680,13 @@ tr:hover td{background:#fcfaff}
               <div style="font-size:14px;font-weight:800;color:#3b0f5f;margin-bottom:14px;display:flex;align-items:center;gap:7px">
                 ⚠️ توزيع حسب الأولوية
               </div>
-              <div style="position:relative;height:200px"><canvas id="chartPriority"></canvas></div>
+              <div style="position:relative;height:200px"><canvas id="chartPriority" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
             </div>
             <div style="background:white;border:1px solid #ddd6fe;border-radius:16px;padding:20px;box-shadow:0 2px 8px rgba(107,33,168,.08)">
               <div style="font-size:14px;font-weight:800;color:#3b0f5f;margin-bottom:14px;display:flex;align-items:center;gap:7px">
                 🏆 نسبة الإغلاق حسب القسم
               </div>
-              <div style="position:relative;height:200px"><canvas id="chartCloseRate"></canvas></div>
+              <div style="position:relative;height:200px"><canvas id="chartCloseRate" style="box-sizing: border-box; display: block; height: 0px; width: 0px;" width="0" height="0"></canvas></div>
             </div>
           </div>
         </div>
@@ -384,11 +696,11 @@ tr:hover td{background:#fcfaff}
         <div class="head"><div><h1>الإعدادات</h1><p>قوائم الأقسام والأنواع المستخدمة في النظام.</p></div></div>
         <div class="card">
           <div class="card-h"><h3>الأقسام الافتراضية</h3></div>
-          <div class="card-b" id="deptList"><span class="badge pr-normal" style="margin:4px">الإدارة العامة </span><span class="badge pr-normal" style="margin:4px">المالية </span><span class="badge pr-normal" style="margin:4px">الموارد البشرية </span><span class="badge pr-normal" style="margin:4px">التسويق </span><span class="badge pr-normal" style="margin:4px">خدمة العملاء </span><span class="badge pr-normal" style="margin:4px">الكول سنتر </span><span class="badge pr-normal" style="margin:4px">المختبر الرئيسي </span><span class="badge pr-normal" style="margin:4px">فروع الكولكشن </span><span class="badge pr-normal" style="margin:4px">مديرو الفروع </span><span class="badge pr-normal" style="margin:4px">العمليات </span><span class="badge pr-normal" style="margin:4px">تقنية المعلومات IT </span><span class="badge pr-normal" style="margin:4px">الجودة </span><span class="badge pr-normal" style="margin:4px">المبيعات </span><span class="badge pr-normal" style="margin:4px">التحصيل </span><span class="badge pr-normal" style="margin:4px">الشكاوى وتجربة العميل </span></div>
+          <div class="card-b" id="deptList"><div style="display:flex;gap:8px;margin-bottom:14px"><input id="newDept" class="fi" placeholder="أضف قسم جديد"><button class="btn btn-primary" onclick="addDepartment()">إضافة قسم</button></div><span class="badge pr-normal" style="margin:4px">الإدارة العامة <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;الإدارة العامة&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">المالية <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;المالية&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">الموارد البشرية <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;الموارد البشرية&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">التسويق <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;التسويق&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">خدمة العملاء <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;خدمة العملاء&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">المختبر الرئيسي <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;المختبر الرئيسي&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">فروع الكولكشن <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;فروع الكولكشن&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">مديرو الفروع <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;مديرو الفروع&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">العمليات <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;العمليات&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">تقنية المعلومات IT <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;تقنية المعلومات IT&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">الجودة <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;الجودة&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">المبيعات <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;المبيعات&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">التحصيل <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;التحصيل&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">الشكاوى وتجربة العميل <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;الشكاوى وتجربة العميل&#39;)">×</button></span><span class="badge pr-normal" style="margin:4px">المشاريع <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeDepartment(&#39;المشاريع&#39;)">×</button></span></div>
         </div>
         <div class="card">
           <div class="card-h"><h3>أنواع التذاكر</h3></div>
-          <div class="card-b" id="typeList"><span class="badge pr-low" style="margin:4px">طلب دعم </span><span class="badge pr-low" style="margin:4px">مشكلة عميل </span><span class="badge pr-low" style="margin:4px">تأخير نتيجة </span><span class="badge pr-low" style="margin:4px">تعديل بيانات عميل </span><span class="badge pr-low" style="margin:4px">مشكلة عينة / Accession </span><span class="badge pr-low" style="margin:4px">مشكلة دفع / مالية </span><span class="badge pr-low" style="margin:4px">طلب ماركتنق </span><span class="badge pr-low" style="margin:4px">طلب موارد بشرية </span><span class="badge pr-low" style="margin:4px">طلب IT </span><span class="badge pr-low" style="margin:4px">شكوى </span><span class="badge pr-low" style="margin:4px">طلب موافقة </span><span class="badge pr-low" style="margin:4px">أخرى </span></div>
+          <div class="card-b" id="typeList"><div style="display:flex;gap:8px;margin-bottom:14px"><input id="newType" class="fi" placeholder="أضف نوع تذكرة جديد"><button class="btn btn-primary" onclick="addTicketType()">إضافة نوع</button></div><span class="badge pr-low" style="margin:4px">طلب دعم <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;طلب دعم&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">مشكلة عميل <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;مشكلة عميل&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">تأخير نتيجة <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;تأخير نتيجة&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">تعديل بيانات عميل <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;تعديل بيانات عميل&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">مشكلة عينة / Accession <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;مشكلة عينة / Accession&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">مشكلة دفع / مالية <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;مشكلة دفع / مالية&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">طلب ماركتنق <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;طلب ماركتنق&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">طلب موارد بشرية <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;طلب موارد بشرية&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">طلب IT <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;طلب IT&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">شكوى <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;شكوى&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">طلب موافقة <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;طلب موافقة&#39;)">×</button></span><span class="badge pr-low" style="margin:4px">أخرى <button style="margin-right:6px;border:0;background:transparent;cursor:pointer;color:#991b1b" onclick="removeTicketType(&#39;أخرى&#39;)">×</button></span></div>
         </div>
       </section>
     </main>
@@ -405,10 +717,10 @@ tr:hover td{background:#fcfaff}
         <div class="field"><label>نوع التذكرة *</label><select id="tType"><option>طلب دعم</option><option>مشكلة عميل</option><option>تأخير نتيجة</option><option>تعديل بيانات عميل</option><option>مشكلة عينة / Accession</option><option>مشكلة دفع / مالية</option><option>طلب ماركتنق</option><option>طلب موارد بشرية</option><option>طلب IT</option><option>شكوى</option><option>طلب موافقة</option><option>أخرى</option></select></div>
       </div>
       <div class="grid2">
-        <div class="field"><label>من قسم *</label><select id="tFrom"><option>الإدارة العامة</option><option>المالية</option><option>الموارد البشرية</option><option>التسويق</option><option>خدمة العملاء</option><option>الكول سنتر</option><option>المختبر الرئيسي</option><option>فروع الكولكشن</option><option>مديرو الفروع</option><option>العمليات</option><option>تقنية المعلومات IT</option><option>الجودة</option><option>المبيعات</option><option>التحصيل</option><option>الشكاوى وتجربة العميل</option></select></div>
-        <div class="field"><label>إلى قسم *</label><select id="tTo" onchange="updateAssignedUsers()"><option>الإدارة العامة</option><option>المالية</option><option>الموارد البشرية</option><option>التسويق</option><option>خدمة العملاء</option><option>الكول سنتر</option><option>المختبر الرئيسي</option><option>فروع الكولكشن</option><option>مديرو الفروع</option><option>العمليات</option><option>تقنية المعلومات IT</option><option>الجودة</option><option>المبيعات</option><option>التحصيل</option><option>الشكاوى وتجربة العميل</option></select></div>
+        <div class="field"><label>من قسم *</label><select id="tFrom"><option>الإدارة العامة</option><option>المالية</option><option>الموارد البشرية</option><option>التسويق</option><option>خدمة العملاء</option><option>المختبر الرئيسي</option><option>فروع الكولكشن</option><option>مديرو الفروع</option><option>العمليات</option><option>تقنية المعلومات IT</option><option>الجودة</option><option>المبيعات</option><option>التحصيل</option><option>الشكاوى وتجربة العميل</option><option>المشاريع</option></select></div>
+        <div class="field"><label>إلى قسم *</label><select id="tTo" onchange="updateAssignedUsers()"><option>الإدارة العامة</option><option>المالية</option><option>الموارد البشرية</option><option>التسويق</option><option>خدمة العملاء</option><option>المختبر الرئيسي</option><option>فروع الكولكشن</option><option>مديرو الفروع</option><option>العمليات</option><option>تقنية المعلومات IT</option><option>الجودة</option><option>المبيعات</option><option>التحصيل</option><option>الشكاوى وتجربة العميل</option><option>المشاريع</option></select></div>
       </div>
-      <div class="field"><label>توجيه إلى موظف داخل القسم المستلم</label><select id="tAssigned"><option value="">بدون تحديد موظف</option></select></div>
+      <div class="field"><label>توجيه إلى موظف داخل القسم المستلم</label><select id="tAssigned"><option value="">بدون تحديد موظف</option><option value="muhalhel@wareed.com.sa">Muhalhel Alzahrani - مدير عام</option></select></div>
       <div class="grid3">
         <div class="field"><label>اسم العميل إن وجد</label><input id="tClient" placeholder="اسم العميل"></div>
         <div class="field"><label>رقم جوال العميل إن وجد</label><input id="tMobile" placeholder="+9665xxxxxxx أو 05xxxxxxx"></div>
@@ -452,7 +764,7 @@ tr:hover td{background:#fcfaff}
             <option value="admin">مدير عام 👑</option>
           </select>
         </div>
-        <div class="field"><label>القسم *</label><select id="uDept"><option>الإدارة العامة</option><option>المالية</option><option>الموارد البشرية</option><option>التسويق</option><option>خدمة العملاء</option><option>الكول سنتر</option><option>المختبر الرئيسي</option><option>فروع الكولكشن</option><option>مديرو الفروع</option><option>العمليات</option><option>تقنية المعلومات IT</option><option>الجودة</option><option>المبيعات</option><option>التحصيل</option><option>الشكاوى وتجربة العميل</option></select></div>
+        <div class="field"><label>القسم *</label><select id="uDept"><option>الإدارة العامة</option><option>المالية</option><option>الموارد البشرية</option><option>التسويق</option><option>خدمة العملاء</option><option>المختبر الرئيسي</option><option>فروع الكولكشن</option><option>مديرو الفروع</option><option>العمليات</option><option>تقنية المعلومات IT</option><option>الجودة</option><option>المبيعات</option><option>التحصيل</option><option>الشكاوى وتجربة العميل</option><option>المشاريع</option></select></div>
       </div>
       <div class="field" id="permSection" style="margin-top:4px">
         <label style="display:block;font-size:12px;font-weight:700;color:#6b5b8e;margin-bottom:8px">
@@ -491,7 +803,7 @@ tr:hover td{background:#fcfaff}
   </div>
 </div>
 
-<div id="toast" class="toast"></div>
+<div id="toast" class="toast">✅ مرحباً Muhalhel Alzahrani</div>
 
 <script>
 const LOGO='data:image/jpeg;base64,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';
