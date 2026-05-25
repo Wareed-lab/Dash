@@ -7,19 +7,19 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<link rel="stylesheet" href="./index_files/tabler-icons.min.css">
-<script src="./index_files/firebase-app-compat.js.download"></script>
-<script src="./index_files/firebase-firestore-compat.js.download"></script>
-<script src="./index_files/firebase-auth-compat.js.download"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
 
 <script>
 if(typeof firebase === 'undefined'){
   document.write('<script src="https://cdn.jsdelivr.net/npm/firebase@10.14.1/app/dist/app-compat.js"><\/script>');
 }
 </script>
-<script src="./index_files/email.min.js.download"></script>
-<script src="./index_files/chart.min.js.download"></script>
-<link href="./index_files/css2" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 
 
 
@@ -125,6 +125,38 @@ tr:hover td{background:#fcfaff}
 }
 * { -webkit-tap-highlight-color: transparent; }
 
+
+/* Report readability fix */
+#reports canvas,
+canvas[id*="Chart"],
+canvas[id*="chart"]{
+  width:100% !important;
+  max-width:100% !important;
+  height:320px !important;
+  min-height:320px !important;
+  display:block !important;
+}
+#reports .card,
+.page#reports .card{
+  min-height:390px;
+}
+#reports .card-b,
+.page#reports .card-b{
+  min-height:330px;
+  overflow:visible;
+}
+.report-empty{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:260px;
+  color:var(--muted);
+  font-weight:800;
+  background:#fbf7ff;
+  border:1px dashed var(--line);
+  border-radius:16px;
+}
+
 </style>
 
 <script>
@@ -146,6 +178,50 @@ tr:hover td{background:#fcfaff}
 
 
 
+
+
+<script>
+window.EMAILJS_PUBLIC_KEY = "0SsAGYqpoQjelUX54";
+window.EMAILJS_SERVICE_ID = "service_z0azzm4";
+window.EMAILJS_TEMPLATE_ID = "template_vi3ksn9";
+document.addEventListener('DOMContentLoaded', function(){
+  try{
+    if(window.emailjs && window.emailjs.init){
+      emailjs.init({ publicKey: window.EMAILJS_PUBLIC_KEY });
+      console.log("EmailJS initialized");
+    } else {
+      console.warn("EmailJS library not loaded yet");
+    }
+  }catch(e){ console.error("EmailJS init failed", e); }
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  try{
+    if(window.Chart){
+      Chart.defaults.font.family = 'Tajawal, Arial, sans-serif';
+      Chart.defaults.font.size = 13;
+      Chart.defaults.color = '#3b0f5f';
+      Chart.defaults.responsive = true;
+      Chart.defaults.maintainAspectRatio = false;
+      Chart.defaults.plugins.legend.labels.usePointStyle = true;
+      Chart.defaults.plugins.tooltip.rtl = true;
+      Chart.defaults.plugins.tooltip.textDirection = 'rtl';
+      console.log('Chart.js ready and styled');
+    }
+  }catch(e){ console.warn('Chart default patch failed', e); }
+
+  setTimeout(function(){
+    document.querySelectorAll('canvas').forEach(function(c){
+      c.style.height = '320px';
+      c.style.minHeight = '320px';
+      if(!c.parentElement.style.minHeight) c.parentElement.style.minHeight='330px';
+    });
+  }, 800);
+});
+</script>
 
 </head>
 <body>
@@ -1937,5 +2013,15 @@ document.addEventListener('DOMContentLoaded', function(){
 })();
 </script>
 
+
+
+<script>
+function showSuccessTicketSavedPatch(){
+  try{
+    if(typeof toast === 'function') toast('تم رفع التذكرة بنجاح ✅','ok');
+    else alert('تم رفع التذكرة بنجاح');
+  }catch(e){ alert('تم رفع التذكرة بنجاح'); }
+}
+</script>
 
 </body></html>
