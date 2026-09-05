@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>لوحات وريد BI</title>
+<style>
+  :root{--p:#5c1d66;--p2:#3e174b;--teal:#0f8a8a;--bg:#f4f1f6;--card:#ffffff;--txt:#221826;--muted:#6b5b72;--danger:#b3261e;}
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:"Segoe UI",Tahoma,Arial,sans-serif;background:var(--bg);color:var(--txt);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;}
+  .wrap{width:100%;max-width:420px;}
+  .logo{text-align:center;margin-bottom:22px;}
+  .logo .mark{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--p),var(--teal));color:#fff;font-weight:700;font-size:22px;margin-bottom:10px;}
+  .logo h1{font-size:20px;margin:0;color:var(--p2);}
+  .logo p{margin:4px 0 0;color:var(--muted);font-size:13px;}
+  .card{background:var(--card);border-radius:16px;padding:28px;box-shadow:0 8px 30px rgba(60,20,70,.12);}
+  label{display:block;font-size:13px;color:var(--muted);margin:0 0 6px;}
+  input{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #ddd4e0;font-size:15px;margin-bottom:16px;background:#faf8fb;}
+  input:focus{outline:none;border-color:var(--p);background:#fff;}
+  button{width:100%;padding:12px;border:none;border-radius:10px;background:var(--p);color:#fff;font-size:15px;font-weight:600;cursor:pointer;}
+  button:hover{background:var(--p2);}
+  .err{color:var(--danger);font-size:13px;min-height:18px;margin:-6px 0 12px;text-align:center;}
+  .hub{display:none;}
+  .hub .card{padding:22px;}
+  .hub h2{font-size:16px;color:var(--p2);margin:0 0 14px;}
+  .tile{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border:1px solid #eadff0;border-radius:12px;margin-bottom:10px;text-decoration:none;color:var(--txt);background:#fbf9fc;}
+  .tile:hover{border-color:var(--p);background:#fff;}
+  .tile .t{font-weight:600;font-size:14px;}
+  .tile .d{font-size:12px;color:var(--muted);margin-top:2px;}
+  .tile .go{color:var(--p);font-size:18px;}
+  .logout{display:block;text-align:center;margin-top:14px;font-size:12px;color:var(--muted);cursor:pointer;}
+  .note{font-size:11px;color:var(--muted);text-align:center;margin-top:16px;line-height:1.6;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">
+      <div class="mark">W</div>
+      <h1>لوحات وريد BI</h1>
+      <p>نسخة تجريبية للاطلاع فقط</p>
+    </div>
+
+    <div class="card" id="loginCard">
+      <form id="loginForm" autocomplete="off">
+        <label for="u">اسم المستخدم</label>
+        <input id="u" name="u" autocomplete="off" />
+        <label for="p">كلمة المرور</label>
+        <input id="p" name="p" type="password" autocomplete="off" />
+        <div class="err" id="err"></div>
+        <button type="submit">تسجيل الدخول</button>
+      </form>
+    </div>
+
+    <div class="card hub" id="hubCard">
+      <h2>اختر اللوحة</h2>
+      <a class="tile" href="executive.html">
+        <div><div class="t">لوحة التنفيذي (Executive)</div><div class="d">الإيرادات، الإنجاز الشهري، خريطة الفروع</div></div>
+        <div class="go">‹</div>
+      </a>
+      <a class="tile" href="reservations.html">
+        <div><div class="t">لوحة الحجوزات (Reservations)</div><div class="d">تصنيف الحجوزات حسب الموظف/الفرع</div></div>
+        <div class="go">‹</div>
+      </a>
+      <a class="tile" href="wareed-bi-live.html">
+        <div><div class="t">تطبيق Wareed BI (Live)</div><div class="d">نفس لوحة تطبيق الأندرويد</div></div>
+        <div class="go">‹</div>
+      </a>
+      <span class="logout" id="logout">تسجيل الخروج</span>
+    </div>
+
+    <div class="note">هذه نسخة ثابتة (Snapshot) من الملفات وقت الرفع، وتسجيل الدخول للتجربة فقط وليس حماية أمنية حقيقية.</div>
+  </div>
+
+<script>
+(function(){
+  var KEY = 'wareed_auth';
+  var USER = 'Admin', PASS = 'Admin123';
+  var loginCard = document.getElementById('loginCard');
+  var hubCard = document.getElementById('hubCard');
+  var err = document.getElementById('err');
+
+  function showHub(){
+    loginCard.style.display = 'none';
+    hubCard.style.display = 'block';
+    var params = new URLSearchParams(location.search);
+    var next = params.get('next');
+    if (next && /^[a-zA-Z0-9_-]+\.html$/.test(next)) {
+      location.replace(next);
+    }
+  }
+
+  if (sessionStorage.getItem(KEY) === 'ok') {
+    showHub();
+  }
+
+  document.getElementById('loginForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var u = document.getElementById('u').value.trim();
+    var p = document.getElementById('p').value;
+    if (u === USER && p === PASS) {
+      sessionStorage.setItem(KEY, 'ok');
+      err.textContent = '';
+      showHub();
+    } else {
+      err.textContent = 'اسم المستخدم أو كلمة المرور غير صحيحة';
+    }
+  });
+
+  document.getElementById('logout').addEventListener('click', function(){
+    sessionStorage.removeItem(KEY);
+    location.href = 'index.html';
+  });
+})();
+</script>
+</body>
+</html>
